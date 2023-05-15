@@ -14,7 +14,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <nav className="sm:visible invisible">
+        <nav className="sm:block hidden">
           <ul className="flex gap-x-10 tracking-widest">
             <li className={`${hoverStyles.hoverUnderline} cursor-pointer`}>
               WHO WE ARE
@@ -51,17 +51,18 @@ export default function Home() {
       <section className="sm:min-h-screen sm:-mt-[160px] sm:flex px-12 relative overflow-hidden">
         {/* left side */}
         <div className="opacity-[0.2] scale-125 absolute w-full h-full right-[0] bg-contain top-[480px] bg-no-repeat bg-[url('https://cdn.webshopapp.com/shops/186977/files/265363364/ben-kleyn-rotterdam-skyline-pop-art.jpg')]"></div>
-        <div className="flex-1 sm:pl-20 pt-[280px] relative z-30">
+        <div className="flex-1 sm:pl-20 pt-[50px] sm:pt-[280px] relative z-30">
           <div className="absolute top-0 left-0 w-full h-full"></div>
           <div className="sm:-mr-20 relative z-30">
             <h1 className="sm:text-8xl text-[2.6rem] px-2 uppercase tracking-wide bg-[#028100] inline relative items-center">
               Hospitality <br /> & Travel{" "}
               <span
+                className="translate-x-[-3px] translate-y-[20px] sm:translate-y-[20px] sm:translate-x-[-20px]"
                 style={{
                   fontSize: "18px",
                   color: "white",
                   fontWeight: "bold",
-                  transform: "translateY(20px) translateX(-20px)",
+                  // transform: "translateY(20px) translateX(-20px)",
                   display: "inline-block",
                   position: "absolute",
                   backgroundColor: "black",
@@ -91,12 +92,12 @@ export default function Home() {
         </div>
 
         {/* right side */}
-        <div className="flex-1 pt-[200px]">
-          <div className="relative z-20 my-0 mx-auto sm:-ml-20 h-[32rem] bg-contain bg-no-repeat bg-[url('https://secure.meetupstatic.com/photos/event/a/5/8/a/clean_502482378.webp')]"></div>
+        <div className="flex-1 sm:pt-[200px] pt-[50px]">
+          <div className="relative z-20 my-0 mx-auto sm:-ml-20 h-[12rem] sm:h-[32rem] bg-contain bg-no-repeat bg-[url('https://secure.meetupstatic.com/photos/event/a/5/8/a/clean_502482378.webp')]"></div>
         </div>
       </section>
 
-      <section className="px-12 text-center pb-10 mt-20">
+      <section className="px-12 text-center pb-10 sm:mt-20 mt-10">
         <h2 className="text-xl font-bold mb-6">
           Unforgettable Journeys and Experiences Await
         </h2>
@@ -118,9 +119,9 @@ export default function Home() {
         <h3 className="uppercase tracing-widest text-center font-bold text-5xl">
           Explore our events{" "}
         </h3>
-        <ul className="flex gap-x-2 justify-center py-10">
+        <ul className="flex flex-col gap-y-2 items-center md:flex-row sm:gap-x-2 sm:justify-center py-10">
           <li
-            className={`relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1485872299829-c673f5194813?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1460&q=80')] ${eventItemStyles.eventItem}`}
+            className={`relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[30rem] sm:h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1485872299829-c673f5194813?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1460&q=80')] ${eventItemStyles.eventItem}`}
           >
             <div className="bg-black absolute opacity-50 w-full h-full left-0 top-0"></div>
             <span className={`relative z-20 ${eventItemStyles.title}`}>
@@ -135,7 +136,7 @@ export default function Home() {
             </div>
           </li>
           <li
-            className={`relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80')] ${eventItemStyles.eventItem}`}
+            className={`relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[30rem] sm:h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80')] ${eventItemStyles.eventItem}`}
           >
             <div className="bg-black absolute opacity-50 w-full h-full left-0 top-0"></div>
             <span className={`relative z-20 ${eventItemStyles.title}`}>
@@ -150,7 +151,7 @@ export default function Home() {
             </div>
           </li>
           <li
-            className={` relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80')] ${eventItemStyles.eventItem}`}
+            className={` relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[30rem] sm:h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2831&q=80')] ${eventItemStyles.eventItem}`}
           >
             <div className="bg-black absolute opacity-50 w-full h-full left-0 top-0"></div>
             <span className={`relative z-20 ${eventItemStyles.title}`}>
@@ -165,7 +166,7 @@ export default function Home() {
             </div>
           </li>
           <li
-            className={` relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] ${eventItemStyles.eventItem}`}
+            className={` relative flex cursor-pointer items-center justify-center text-white uppercase font-bold h-[30rem] sm:h-[40rem] w-[20rem] bg-cover bg-[url('https://images.unsplash.com/photo-1532498551838-b7a1cfac622e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] ${eventItemStyles.eventItem}`}
           >
             <div className="bg-black absolute opacity-50 w-full h-full left-0 top-0"></div>
             <span className={`relative z-20 ${eventItemStyles.title}`}>

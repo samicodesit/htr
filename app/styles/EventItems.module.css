@@ -4,29 +4,34 @@
   overflow: hidden;
   width: 20rem;
   height: 40rem;
-  transition: width 0.5s;
 }
 
-.eventItem:hover {
-  width: 30rem;
-  z-index: 1;
-}
+@media (min-width: 768px) {
+  .eventItem {
+    transition: width 0.5s;
+  }
 
-.eventItem:hover ~ .eventItem {
-  width: 15rem;
-  transition: width 0.5s;
-  z-index: 0;
-}
+  .eventItem:hover {
+    width: 30rem;
+    z-index: 1;
+  }
 
-.eventItem:hover .title {
-  opacity: 0;
-  transition: opacity 0.2s;
-}
+  .eventItem:hover ~ .eventItem {
+    width: 15rem;
+    transition: width 0.5s;
+    z-index: 0;
+  }
 
-.eventItem:hover .eventDescription {
-  opacity: 1;
-  transition: opacity 0.3s 0.2s;
-  visibility: visible;
+  .eventItem:hover .title {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .eventItem:hover .eventDescription {
+    opacity: 1;
+    transition: opacity 0.3s 0.2s;
+    visibility: visible;
+  }
 }
 
 .eventDescription {
@@ -38,4 +43,34 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s;
+}
+
+@media (max-width: 767px) {
+  .eventItem {
+    height: 30rem;
+  }
+
+  .eventDescription {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.title {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+@media (min-width: 768px) {
+  .eventItem:hover .title {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
