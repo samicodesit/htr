@@ -1,0 +1,30 @@
+.newsTicker {
+  overflow: hidden;
+  background-color: #f5f5f5;
+  padding: 20px 10px;
+}
+
+.newsTicker ul {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker 25s linear infinite;
+  animation-delay: -5s; /* Delay by -1 full loop */
+}
+
+.newsTicker li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.newsTicker li:last-child {
+  padding-right: 0;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
