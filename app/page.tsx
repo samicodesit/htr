@@ -17,13 +17,15 @@ export default function Home() {
         <nav className="sm:block hidden">
           <ul className="flex gap-x-10 tracking-widest">
             <li className={`${hoverStyles.hoverUnderline} cursor-pointer`}>
-              WHO WE ARE
+              <a href="#who-we-are">WHO WE ARE</a>
             </li>
             <li className={`${hoverStyles.hoverUnderline} cursor-pointer`}>
-              WHAT WE DO
+              <a href="#what-we-do">WHAT WE DO</a>
             </li>
             <li className={`${hoverStyles.hoverUnderline} cursor-pointer`}>
-              JOIN US
+              <a href="https://forms.gle/DymNasaS7pmk5MV77" target="_blank">
+                JOIN US
+              </a>
             </li>
             <li className={`${hoverStyles.hoverUnderline} cursor-pointer`}>
               DONATE
@@ -81,7 +83,9 @@ export default function Home() {
             <button
               className={`px-6 md:px-8 py-2 text-lg ${buttonStyles.button} ${buttonStyles.buttonPrimary}`}
             >
-              Join us
+              <a href="https://forms.gle/DymNasaS7pmk5MV77" target="_blank">
+                Join us
+              </a>
             </button>
             <button
               className={`px-6 md:px-8 py-2 text-lg ${buttonStyles.button} ${buttonStyles.buttonSecondary}`}
@@ -97,7 +101,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-12 text-center pb-10 sm:mt-20 mt-10">
+      <section
+        id="who-we-are"
+        className="px-12 text-center pb-10 sm:mt-20 mt-10"
+      >
         <h2 className="text-xl font-bold mb-6">
           Unforgettable Journeys and Experiences Await
         </h2>
@@ -115,7 +122,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mt-8 text-[#028100]">
+      <section id="what-we-do" className="mt-8 text-[#028100]">
         <h3 className="uppercase tracing-widest text-center font-bold text-5xl">
           Explore our events{" "}
         </h3>
